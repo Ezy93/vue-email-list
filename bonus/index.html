@@ -31,7 +31,7 @@
                     <h1 class="text-uppercase">lista mail</h1>
                 </div>
                 <div class="col-12 p-5 text-center">
-                    <ul>
+                    <ul v-if="mailList.length === 10">
                         <li v-for="element in mailList" class="p-1">
                             {{element}}
                         </li>
