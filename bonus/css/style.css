@@ -1,3 +1,7 @@
 ul{
     list-style-type:decimal;
 }
+
+ul li{
+    border-bottom: 2px solid greenyellow;
+}
