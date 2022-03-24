@@ -14,13 +14,32 @@
     <!-- Vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+    
     <title>vue email list</title>
+
 </head>
 <body>
     <main id="app">
+        <div class="container-fluid">
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase">lista mail</h1>
+                </div>
+                <div class="col-12 p-5 text-center">
+                    <ul>
+                        <li v-for="element in mailList" class="p-1">
+                            {{element}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
     </main>
     <script src="js/main.js"></script>
 </body>
